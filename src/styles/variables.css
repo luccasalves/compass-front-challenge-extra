@@ -1,0 +1,15 @@
+:root {
+    --dark: #524e4e;
+    --light: #f9f9f9;
+    --primary: #f6c953;
+    --primaryDark: #bc8700;
+    --primaryLight: #fbe8b5;
+    --secondary:#5c5543
+
+    --textTitleColor: #575757;
+    --textParagraphColor: #5d5c5c;
+
+    --ma: 16px
+    --pa: 16px
+    
+}
