@@ -1,0 +1,102 @@
+@import "../variables.css";
+@import "../reset.css";
+
+* {
+  box-sizing: border-box;
+}
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light);
+
+  .logo {
+    width: 120px;
+  }
+}
+
+.container {
+  max-width: 766px;
+  width: 100%;
+  min-height: calc(100vh - 90px);
+  border-radius: 32px;
+  margin: 0 auto;
+  padding: var(--pa);
+
+  .product-img {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primaryLight);
+    border-radius: 32px 32px 0 0;
+    padding: var(--pa);
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .product-data {
+    border-radius: 0 0 32px 32px;
+    background-color: var(--light);
+
+    padding: var(--pa);
+    .actions-info {
+      display: flex;
+      height: 40px;
+      justify-content: space-evenly;
+      background: var(--primaryLight);
+      max-width: 70%;
+      min-width: 300px;
+      margin: auto;
+      border-radius: 16px;
+
+      button {
+        width: 100%;
+        border-radius: 16px;
+        &:hover {
+          background-color: #f9db8b;
+        }
+      }
+    }
+
+    .product-text {
+      margin-top: 12px;
+      h1 {
+        color: var(--titleColor);
+        margin-bottom: 12px;
+      }
+    }
+    .price {
+      font-weight: 700;
+      color: var(--primaryDark);
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+    }
+    p {
+      color: var(--text-color);
+    }
+  }
+
+  .actions-shop {
+    width: 70%;
+    min-width: 320px;
+    height: 50px;
+    margin: 28px auto;
+    display: flex;
+    gap: 32px;
+
+    button {
+      width: 100%;
+      border-radius: 16px;
+      background-color: var(--primaryLight);
+      &:hover {
+        background-color: #f9db8b;
+      }
+    }
+
+    .buy-now {
+      background-color: var(--primary);
+    }
+  }
+}

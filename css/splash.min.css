@@ -1,0 +1,1 @@
+@import"../reset.css";@import"../variables.css";body{width:100vw;height:100vh;display:flex;justify-content:center;align-items:center}.logo{opacity:0}.bg{transition:.6s;background-color:var(--primary)}.showLogo{transition:.6s;transition-delay:3000;opacity:1}

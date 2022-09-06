@@ -1,0 +1,18 @@
+:root {
+    --dark: #2d2d2d;
+    --soft: #d4d4d4;
+    --light: #f9f9f9;
+    --primary: #f6c953;
+    --primaryDark: #bc8700;
+    --primaryLight: #fbe8b5;
+    --secondary: #5c5543;
+    --red: #ff4848;
+
+    --titleColor: #575757;
+    --textColor: #5d5c5c;
+
+    --ma: 16px;
+    --pa: 16px;
+    --pa-2x: 32px;
+    --rounded: 16px;
+}

@@ -1,0 +1,126 @@
+@import "../reset.css";
+@import "../variables.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--primaryLight);
+}
+
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light);
+
+  .logo {
+    width: 120px;
+  }
+}
+
+.container {
+  max-width: 1366px;
+  width: 100%;
+  background-color: var(--primaryLight);
+  min-height: calc(100vh - 90px);
+  border-radius: 32px;
+  margin: 0 auto;
+  padding: var(--pa);
+
+  .welcome {
+    margin: 24px 0;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    .name {
+      font-weight: bold;
+      text-transform: capitalize;
+    }
+  }
+
+  .content {
+    .content__product {
+      h1 {
+        color: var(--titleColor);
+        font-size: 1.2rem;
+        margin-bottom: 24px;
+        text-align: center;
+      }
+
+      .product-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
+
+        .product__card {
+          border-radius: var(--rounded);
+          max-width: 300px;
+          padding: 16px;
+          background-color: var(--light);
+          display: flex;
+          flex-direction: column;
+          cursor: pointer;
+          transition: 0.5s;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+
+          .btn-fav {
+            display: flex;
+            justify-content: flex-end;
+
+            button {
+              background-color: var(--red);
+              border-radius: 50%;
+              padding: 2px;
+            }
+          }
+
+          img {
+            width: 80%;
+            margin: auto;
+          }
+          .product__data {
+            margin-top: 16px;
+            .product__title {
+              font-size: 1.2rem;
+              color: var(--titleColor);
+              font-weight: 700;
+              margin-bottom: 6px;
+            }
+
+            .product__price {
+              font-size: 1.2rem;
+              font-weight: 700;
+              color: var(--primaryDark);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 750px) {
+  body {
+    background-color: white;
+  }
+  .product__card {
+    width: 200px;
+  }
+}
+@media (max-width: 450px) {
+  .product__card {
+    width: 150px;
+  }
+}
+@media (max-width: 340px) {
+  .product__card {
+    width: 240px;
+  }
+}
