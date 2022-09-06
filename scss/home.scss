@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -123,8 +123,8 @@ body {
     width: 150px;
   }
 }
-@media (max-width: 340px) {
+@media (max-width: 349px) {
   .product__card {
-    width: 240px;
+    width: 300px;
   }
 }
