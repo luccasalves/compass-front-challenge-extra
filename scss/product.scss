@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 .header {
-  height: 80px;
+  height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,28 +17,29 @@
 }
 
 .container {
-  max-width: 766px;
+  max-width: 768px;
   width: 100%;
   min-height: calc(100vh - 90px);
   border-radius: 32px;
   margin: 0 auto;
-  padding: var(--pa);
+  background-color: var(--primaryLight);
+  border-radius: 32px 32px 0 0;
 
   .product-img {
     display: flex;
     justify-content: center;
-    background-color: var(--primaryLight);
-    border-radius: 32px 32px 0 0;
     padding: var(--pa);
 
     img {
-      max-width: 100%;
+      max-width: 40%;
     }
   }
 
   .product-data {
-    border-radius: 0 0 32px 32px;
-    background-color: var(--light);
+    border-radius: 32px 32px 0 0;
+    background-color: white;
+    min-height: 500px;
+    height: 100%;
 
     padding: var(--pa);
     .actions-info {
@@ -97,6 +98,14 @@
 
     .buy-now {
       background-color: var(--primary);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .product-img {
+    img {
+      width: 60%;
     }
   }
 }
